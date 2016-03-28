@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <!-- inject:css:css -->
+    <link rel="stylesheet" href="/dist/css/css/loading-triangules.css">
+    <link rel="stylesheet" href="/dist/css/css/sb-admin-2.css">
+    <link rel="stylesheet" href="/dist/css/css/stylesheet.css">
+    <link rel="stylesheet" href="/dist/css/angular-typewrite/dist/angular-typewrite.css">
+    <link rel="stylesheet" href="/dist/css/font-awesome/css/font-awesome.css">
+    <link rel="stylesheet" href="/dist/css/fontawesome/css/font-awesome.css">
+    <link rel="stylesheet" href="/dist/css/metisMenu/dist/metisMenu.css">
+    <link rel="stylesheet" href="/dist/css/textAngular/dist/textAngular.css">
+    <link rel="stylesheet" href="/dist/css/textAngular/src/textAngular.css">
+    <link rel="stylesheet" href="/dist/css/bootstrap/dist/css/bootstrap.css">
+    <!-- endinject -->
+    <!-- Custom Fonts -->
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+     <!-- inject:bowerjquery:js -->
+    <script src="/dist/jquery/dist/jquery.min.js"></script>
+    <script src="/dist/jquery/sizzle/dist/sizzle.min.js"></script>
+    <!-- endinject -->
+    <!-- inject:bowerangular:js -->
+    <script src="/dist/angular/angular.min.js"></script>
+    <!-- endinject -->
+    <!-- inject:boweraux:js -->    
+    <script src="/dist/boweraux/es5-shim/es5-sham.min.js"></script>    
+    <script src="/dist/boweraux/es5-shim/es5-shim.min.js"></script>    
+    <script src="/dist/boweraux/angular-file-upload/dist/angular-file-upload.min.js"></script>    
+    <script src="/dist/boweraux/angular-typewrite/dist/angular-typewrite.js"></script>    
+    <script src="/dist/boweraux/angular-ui-router/release/angular-ui-router.min.js"></script>    
+    <script src="/dist/boweraux/json3/lib/json3.min.js"></script>    
+    <script src="/dist/boweraux/metisMenu/dist/metisMenu.min.js"></script>    
+    <script src="/dist/boweraux/phaser/build/phaser.min.js"></script>    
+    <script src="/dist/boweraux/textAngular/dist/textAngular-rangy.min.js"></script>    
+    <script src="/dist/boweraux/textAngular/dist/textAngular-sanitize.min.js"></script>    
+    <script src="/dist/boweraux/textAngular/dist/textAngular.min.js"></script>    
+    <script src="/dist/boweraux/bootstrap/dist/js/bootstrap.min.js"></script>    
+    <script src="/dist/boweraux/phaser/build/custom/p2.min.js"></script>    
+    <script src="/dist/boweraux/phaser/build/custom/phaser-arcade-physics.min.js"></script>    
+    <script src="/dist/boweraux/phaser/build/custom/phaser-minimum.min.js"></script>    
+    <script src="/dist/boweraux/phaser/build/custom/phaser-no-physics.min.js"></script>    
+    <script src="/dist/boweraux/phaser/build/custom/phaser-split.min.js"></script>    
+    <script src="/dist/boweraux/phaser/build/custom/pixi.min.js"></script>    
+    <script src="/dist/boweraux/phaser/docs/scripts/jquery.min.js"></script>    
+    <script src="/dist/boweraux/phaser/docs/scripts/prettify/jquery.min.js"></script>    
+    <script src="/dist/boweraux/phaser/resources/docstrap-master/template/static/scripts/jquery.min.js"></script>    
+    <script src="/dist/boweraux/phaser/resources/tutorials/Spanish/02 Creando tu primer juego/js/phaser.min.js"></script>    
+    <script src="/dist/boweraux/phaser/resources/docstrap-master/template/static/scripts/prettify/jquery.min.js"></script>    
+    <!-- endinject -->
+    <!-- inject:app:js -->    
+    <script src="/dist/app.js"></script>    
+    <!-- endinject -->
+    <!-- inject:appcontent:js -->   
+    <script src="/dist/appmin/app.js"></script>   
+    <script src="/dist/appmin/rotas.js"></script>   
+    <script src="/dist/appmin/directives/ng-loading-triangules-directive.js"></script>   
+    <script src="/dist/appmin/directives/ng-paginator-directive.js"></script>   
+    <script src="/dist/appmin/directives/ng-side-menu-directive.js"></script>   
+    <script src="/dist/appmin/directives/ng-thumb-directive.js"></script>   
+    <script src="/dist/appmin/templates/usuario-service.js"></script>   
+    <script src="/dist/appmin/js/agendas/agendas-controller.js"></script>   
+    <script src="/dist/appmin/js/agendas/agendas-service.js"></script>   
+    <script src="/dist/appmin/js/agendas/cadastrar-agendas-controller.js"></script>   
+    <script src="/dist/appmin/js/bemvindo/bemvindo-controller.js"></script>   
+    <script src="/dist/appmin/js/cenarios/cadastrar-cenario-controller.js"></script>   
+    <script src="/dist/appmin/js/cenarios/cadastrar-cenario-service.js"></script>   
+    <script src="/dist/appmin/js/mensagens/mensagens-controller.js"></script>   
+    <script src="/dist/appmin/js/mensagens/mensagens-service.js"></script>   
+    <script src="/dist/appmin/js/header/header-controller.js"></script>   
+    <script src="/dist/appmin/js/header/header-service.js"></script>   
+    <script src="/dist/appmin/js/novidades/cadastrar-novidades-controller.js"></script>   
+    <script src="/dist/appmin/js/novidades/novidades-controller.js"></script>   
+    <script src="/dist/appmin/js/novidades/novidades-service.js"></script>   
+    <script src="/dist/appmin/js/personagens/personagens-controller.js"></script>   
+    <script src="/dist/appmin/js/personagens/personagens-service.js"></script>   
+    <script src="/dist/appmin/js/rodape/cadastrar-footer-controller.js"></script>   
+    <script src="/dist/appmin/js/rodape/footer-controller.js"></script>   
+    <script src="/dist/appmin/js/rodape/footer-service.js"></script>   
+    <script src="/dist/appmin/js/upload-imagens/upload-imagens-controller.js"></script>   
+    <script src="/dist/appmin/js/upload-imagens/upload-imagens-service.js"></script>   
+    <script src="/dist/appmin/js/usuario/usuario-controller.js"></script>   
+    <script src="/dist/appmin/js/usuario/usuario-service.js"></script>   
+    <!-- endinject -->
+    <script type="text/ng-template" id="categoryTree">
+        <div class="navbar-default sidebar" role="navigation">
+            <div class="sidebar-nav navbar-collapse">
+                <ul class="nav" id="side-menu">
+                    <li class="sidebar-search">
+                        <div class="input-group custom-search-form">
+                            <input type="text" class="form-control" placeholder="Search...">
+                            <span class="input-group-btn">
+                        <button class="btn btn-default" type="button">
+                            <i class="fa fa-search"></i>
+                        </button>
+                    </span>
+                        </div>
+                        <!-- /input-group -->
+                    </li>
+                    <li ng-repeat="category in categories" ng-include="'categoryTree'">
+                        <a href="#"><i class="fa fa-sitemap fa-fw"></i>{{ category.title }}<span class="fa arrow"></span></a>
+                        <ul ng-if="category.categories" class="nav" class={{ category.class }}>
+                            <li ng-repeat="category in category.categories" ng-include="'categoryTree'">
+                            </li>
+                        </ul>
+                        <!-- /.nav-second-level -->
+                    </li>
+                </ul>
+            </div>
+            <!-- /.sidebar-collapse -->
+        </div>
+    </script>
+    <title>Story teller</title>
+</head>
+
+<body ng-app="gamemodule">
+    <div id="wrapper">
+        <!-- Navigation -->
+        <!-- Navigation -->
+        <nav class="navbar navbar-default navbar-static-top" role="navigation" style="margin-bottom: 0" ng-controller="headerController">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="/master">Home Admin</a>
+            </div>
+            <!-- /.navbar-header -->
+
+            <ul class="nav navbar-top-links navbar-right">
+                <li class="dropdown">
+                    <a class="dropdown-toggle" data-toggle="dropdown" href="">
+                        <i class="fa fa-envelope fa-fw"></i> <i class="fa fa-caret-down"></i>
+                    </a>
+                    <ul class="dropdown-menu dropdown-messages">
+                        <li ng-repeat-start="item in lista">
+                            <a href="">
+                                <div>
+                                    <strong>{{item.nome}}</strong>
+                                    <span class="pull-right text-muted">
+                                        <em>{{item.email}}</em>
+                                    </span>
+                                </div>
+                                <div>{{item.msg}}</div>
+                            </a>
+                        </li>
+                        <li ng-repeat-end class="divider"></li>
+                        <li>
+                            <a class="text-center" href="#/mensagens">
+                                <strong>Ler todas as mensagens</strong>
+                                <i class="fa fa-angle-right"></i>
+                            </a>
+                        </li>
+                    </ul>
+                    <!-- /.dropdown-messages -->
+                </li>
+                <!-- /.dropdown -->
+                <li class="dropdown">
+              
+                </li>
+                <!-- /.dropdown -->
+                <li class="dropdown">
+                   
+                </li>
+                <!-- /.dropdown -->
+                <li class="dropdown">
+                    <a class="dropdown-toggle" data-toggle="dropdown" href="">
+                        <i class="fa fa-user fa-fw"></i> <i class="fa fa-caret-down"></i>
+                    </a>
+                    <ul class="dropdown-menu dropdown-user">
+                        <li><a href=""><i class="fa fa-user fa-fw"></i> User Profile</a>
+                        </li>
+                        <li><a href=""><i class="fa fa-gear fa-fw"></i> Settings</a>
+                        </li>
+                        <li class="divider"></li>
+                        <li><a href="#/login"><i class="fa fa-sign-out fa-fw"></i> Logout</a>
+                        </li>
+                    </ul>
+                    <!-- /.dropdown-user -->
+                </li>
+                <!-- /.dropdown -->
+            </ul>
+            <!-- /.navbar-top-links -->
+
+            <div ng-side-menu="" categories="categories"></div>
+            <!-- /.navbar-static-side -->
+        </nav>
+        <!-- Page Content -->
+        <div id="page-wrapper">
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-lg-12">
+                        <ui-view></ui-view>
+                    </div>
+                    <!-- /.col-lg-12 -->
+                </div>
+                <!-- /.row -->
+            </div>
+            <!-- /.container-fluid -->
+        </div>
+        <!-- /#page-wrapper -->
+
+    </div>
+    <!-- /#wrapper -->
+</body>
+
+</html>

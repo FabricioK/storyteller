@@ -1,0 +1,8 @@
+<a  ng-href="{{category.href}}">
+    <i ng-if="category.icon" class="fa fa-fw" ng-class="category.icon"></i>
+    {{ category.title }}
+<span class="fa arrow"  ng-if="category.categories"></span></a>
+<ul ng-if="category.categories" class="nav" ng-class="category.class">
+    <li ng-repeat="category in category.categories" ng-include="'dist/templates/diretivas/sub-menu.html'">
+    </li>
+</ul>

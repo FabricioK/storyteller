@@ -1,0 +1,20 @@
+<div class="row">
+    <div class="col-md-offset-3 col-md-6">
+        <ng-loading-triangules config=configuracao></ng-loading-triangules>
+        <form action="" method="post" ng-show=!configuracao.loading>
+            <div ng-show=!carregando>
+                <h2>Criar Personagem</h2>
+                <label for="inputName" class="sr-only">nome</label>
+                <input type="text" name="nome" ng-model="nome" required class="form-control">
+                <button type="button" ng-click='cadastrar()' class="btn btn-default" value="Entrar" tabindex="4">Entrar</button>
+            </div>
+        </form>
+
+    </div>
+</div>
+<hr />
+<div class="row">
+    <div class="col-md-12" ng-repeat="personagem in listapersonagens">
+           <h2> {{personagem.nome}}</h2>
+    </div>
+</div>

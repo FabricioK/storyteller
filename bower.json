@@ -1,0 +1,32 @@
+{
+  "name": "storyteller",
+  "description": "storyteller engine for browser games",
+  "main": "index.js",
+  "authors": [
+    "FabricioK <fabriciodossa@hotmail.com>"
+  ],
+  "license": "ISC",
+  "moduleType": [
+    "node"
+  ],
+  "homepage": "",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "phaser": "~2.4.6",
+    "angular": "angularjs#~1.5.3",
+    "bootstrap": "~3.3.6",
+    "fontawesome": "~4.5.0",
+    "metisMenu": "~2.4.0",
+    "angular-ui-router": "~0.2.18",
+    "textAngular": "~1.5.0",
+    "angular-file-upload": "~2.2.0",
+    "jquery": "~2.2.1",
+    "angular-typewrite": "~0.0.4"
+  }
+}

@@ -1,0 +1,31 @@
+<div class="row">
+    <div class="col-lg-12 text-center">
+        <h2>Cadastrar Elemento</h2>
+        <hr class="star-light">
+    </div>
+</div>
+<div class="row">
+    <div class="col-md-8">
+        <div class="text-center">
+            <h2>Conteúdo</h2>
+        </div>
+        <input type="text" ng-model="title" class="form-control"></input>
+        <text-angular ng-model="content"></text-angular>
+        <button type="button" ng-click=enviar()>Salvar</button>
+    </div>
+    <div class="col-md-4">
+        <div class="text-center">
+            <h2>Banco de imagens</h2>
+            <hr class="star-light">
+        </div>
+        <div>
+            <div ng-repeat="imagem in listaimagens">
+                <img ng-src="/api/getimage/{{imagem.filename}}" style="height:35px; width:auto;">
+                <label>/api/getimage/{{imagem.filename}}</label>
+            </div>
+        </div>
+        <div class="text-center">
+            <angular-paginator ng-model="pageControl" />
+        </div>
+    </div>
+</div>
