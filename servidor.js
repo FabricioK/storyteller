@@ -160,6 +160,7 @@ app.get('/api/getimage/:id', function (req, res) {
 require('./api/user-routes.js')(app, server, passport);
 
 require('./api/portal/conta-routes.js')(app, server, passport);
+require('./api/portal/quests-routes.js')(app, server, passport);
 
 require('./api/portal/footer-routes.js')(app, server, passport);
 require('./api/portal/agenda-routes.js')(app, server, passport);

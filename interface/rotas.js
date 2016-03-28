@@ -82,10 +82,10 @@
                     templateUrl: 'dist/templates/personagem/cadastrar-personagem.html',
                     controller: 'personagensController'
                 })
-                .state('cadastrarrodape', {
-                    url: '/nova-informacao-rodape',
-                    templateUrl: 'dist/templates/cadastrar-footer.html',
-                    controller: 'cadastrarFooterController'
+                .state('quests', {
+                    url: '/quests',
+                    templateUrl: 'dist/templates/quests/cadastrar-quests.html',
+                    controller: 'questsController'
                 })
                 .state('login', {
                     url: '/login',

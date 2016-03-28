@@ -5,7 +5,7 @@
 			"name": "Launch",
 			"type": "node",
 			"request": "launch",
-			"program": "servidor.js",
+			"program": "${workspaceRoot}/servidor.js",
 			"stopOnEntry": false,
 			"args": [],
 			"cwd": "${workspaceRoot}",
@@ -14,7 +14,8 @@
 				"--nolazy"
 			],
 			"env": {
-				"NODE_ENV": "development"
+				"NODE_ENV": "development",
+                "OPENSHIFT_NODEJS_PORT" : "3007" 
 			},
 			"externalConsole": false,
 			"sourceMaps": false,

@@ -1,0 +1,38 @@
+<ng-loading-triangules config=configuracao></ng-loading-triangules>
+<form action="" method="post" ng-show=!configuracao.loading>
+    <div class="row">
+        <div class="col-md-offset-2 col-md-6">
+            <h2>Quests</h2>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-md-offset-2 col-md-6">
+            <h4>Nome</h4>
+            <input type="text" name="nome" ng-model="nome" required class="form-control" />
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-md-offset-2 col-md-6">
+            <h4>Cenario</h4>
+            <input type="text" name="cenario_id" ng-model="cenario_id" required class="form-control" />
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-md-offset-2 col-md-6">
+            <h4>Experiência</h4>
+            <input type="number" name="exp" ng-model="exp" required class="form-control" />
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-md-offset-2 col-md-6">
+            <h4>Descrição</h4>
+            <text-angular ng-model="content"></text-angular>
+        </div>
+    </div>
+    </div>
+    <div class="row">
+        <div class="col-md-offset-2 col-md-4">
+            <button type="button" ng-click='cadastrar()' class="btn btn-default" value="Entrar" tabindex="4">preview</button>
+        </div>
+    </div>    
+</form>

@@ -24,12 +24,16 @@
                                 class: '',
                                 title: 'Personagens',
                                 href :'#/personagens'   
-                            },
-
+                            }
+                        ]
+                    },{
+                        title: 'Quests',
+                        class: 'nav-second-level',
+                        categories: [
                             {
                                 class: '',
-                                title: 'Nova Novidade',
-                                href: '#/nova-novidade'
+                                title: 'Cadastro',
+                                href :'#/quests'   
                             }
                         ]
                     }

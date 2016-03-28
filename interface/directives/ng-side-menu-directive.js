@@ -26,9 +26,9 @@
 
                     },
                     post: function (scope, element, attributes) {
-                        $timeout(function () {
-                            $('#side-menu').metisMenu();
-                        }, 1500)
+                        $timeout(function() {
+                            angular.element(element).metisMenu();
+                        }, 100)
 
                         var url = window.location;
                         var elements = $('ul.nav a').filter(function () {
