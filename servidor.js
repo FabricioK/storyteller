@@ -157,10 +157,12 @@ app.get('/api/getimage/:id', function (req, res) {
     });
 });
 
-require('./api/user-routes.js')(app, server, passport);
+require('./api/conta/user-routes.js')(app, server, passport);
+require('./api/conta/conta-routes.js')(app, server, passport);
 
-require('./api/portal/conta-routes.js')(app, server, passport);
-require('./api/portal/quests-routes.js')(app, server, passport);
+/* Quests */
+require('./api/quests/quests-routes.js')(app, server, passport);
+require('./api/quests/perguntas-routes.js')(app, server, passport);
 
 require('./api/portal/footer-routes.js')(app, server, passport);
 require('./api/portal/agenda-routes.js')(app, server, passport);

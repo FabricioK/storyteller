@@ -7,7 +7,10 @@ var questSchema = mongoose.Schema({
     date: { type: Date, default: Date.now },
     cenario_id: Number,
     exp: Number,
-    content : String
+    reward: {
+        type: mongoose.Schema.Types.ObjectId,
+        ref: 'Rewards'
+    }
 });
 
 var Quest = mongoose.model('Quest', questSchema);
