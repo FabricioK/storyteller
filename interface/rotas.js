@@ -54,29 +54,6 @@
                     templateUrl: 'dist/templates/bemvindo.html',
                     controller: 'bemvindoController'
                 })
-            // ABOUT PAGE AND MULTIPLE NAMED VIEWS =================================
-                .state('novidades', {
-                    url: '/novidades',
-                    templateUrl: 'dist/templates/novidades.html',
-                    controller: 'novidadesController'
-                })
-                .state('agendas', {
-                    url: '/agendas',
-                    templateUrl: 'dist/templates/agendas.html',
-                    controller: 'agendasController'
-                }).state('footer', {
-                    url: '/footer',
-                    templateUrl: 'dist/templates/rodape.html',
-                    controller: 'footerController'
-                }).state('cadastrarnovidade', {
-                    url: '/nova-novidade',
-                    templateUrl: 'dist/templates/cadastrar-novidade.html',
-                    controller: 'cadastrarNovidadesController'
-                }).state('cadastraragenda', {
-                    url: '/nova-agenda',
-                    templateUrl: 'dist/templates/cadastrar-agenda.html',
-                    controller: 'cadastrarAgendasController'
-                })
                 .state('personagens', {
                     url: '/personagens',
                     templateUrl: 'dist/templates/personagem/cadastrar-personagem.html',

@@ -12,6 +12,15 @@ var questSchema = mongoose.Schema({
         type: mongoose.Schema.Types.ObjectId,
         ref: 'Rewards'
     }
+    , pointsNeedToClose: Number
+    , infoNeedToClose : {
+        type: mongoose.Schema.Types.ObjectId,
+        ref: 'Informacao'
+    }
+    , itemNeedToClose: {
+        type: mongoose.Schema.Types.ObjectId,
+        ref: 'Item'
+    }
 });
 
 var Quest = mongoose.model('Quest', questSchema);

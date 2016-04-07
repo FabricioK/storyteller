@@ -15,7 +15,7 @@
 			],
 			"env": {
 				"NODE_ENV": "development",
-                "OPENSHIFT_NODEJS_PORT" : "3007" 
+                "OPENSHIFT_NODEJS_PORT" : "3010" 
 			},
 			"externalConsole": false,
 			"sourceMaps": false,

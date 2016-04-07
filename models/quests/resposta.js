@@ -9,7 +9,17 @@ var respostaSchema = mongoose
         , pergunta: {
             type: mongoose.Schema.Types.ObjectId,
             ref: 'Pergunta'
+        }, requerItem: {
+            type: mongoose.Schema.Types.ObjectId,
+            ref: 'Item'
         }
+        , recolheItem: Boolean
+        , requerInfo: {
+            type: mongoose.Schema.Types.ObjectId,
+            ref: 'Informacao'
+        }
+        , recolheInfo: Boolean
+        , basePoints: Number
     });
 
 var Resposta = mongoose.model('Resposta', respostaSchema);
