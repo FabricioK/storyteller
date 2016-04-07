@@ -15,13 +15,16 @@ module.exports = function(app, server) {
             });
     });
 
-    //cria novo personagem
+    //cria nova pergunta
     app.post('/api/perguntas', auth, function(req, res) {
-        var post_sav = new Pergunta({
-            nome: req.body.nome
-            , quest: req.body.quest_id
+        var post_sav = new Pergunta({            
+             quest: req.body.quest_id
             , content: req.body.content
-            , exp: req.body.exp
+            , npc: req.body.npc
+            , requerItem : req.body.item
+            , recolheItem :  req.body.recItem
+            , requerInfo :  req.body.requerInfo
+            , recolheInfo :  req.body.recolheInfo
         });
 
         var err = post_sav.validateSync();

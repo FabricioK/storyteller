@@ -34,6 +34,11 @@
                                 class: '',
                                 title: 'Cadastro',
                                 href :'#/quests'   
+                            },
+                             {
+                                class: '',
+                                title: 'Perguntas',
+                                href :'#/perguntas'   
                             }
                         ]
                     }

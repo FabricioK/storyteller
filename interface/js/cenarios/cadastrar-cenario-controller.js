@@ -16,7 +16,7 @@
                
                 });
         }
-        $scope.cadastrarlogin = function () {
+        $scope.cadastrar = function () {
             var model = {
                 nome : $scope.nome,
                 content : $scope.content

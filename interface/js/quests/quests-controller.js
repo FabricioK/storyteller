@@ -44,7 +44,7 @@
             var model =  {
                 nome: $scope.nome,
                 cenario_id: $scope.cenario_id,
-                content: $scope.content,
+                content: $scope.html,
                 exp: $scope.exp
             };
 

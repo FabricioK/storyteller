@@ -6,6 +6,7 @@ var questSchema = mongoose.Schema({
     nome: String,
     date: { type: Date, default: Date.now },
     cenario_id: Number,
+    content : String,
     exp: Number,
     reward: {
         type: mongoose.Schema.Types.ObjectId,

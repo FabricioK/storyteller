@@ -87,6 +87,11 @@
                     templateUrl: 'dist/templates/quests/cadastrar-quests.html',
                     controller: 'questsController'
                 })
+                .state('perguntas', {
+                    url: '/perguntas',
+                    templateUrl: 'dist/templates/quests/cadastrar-perguntas.html',
+                    controller: 'perguntasController'
+                })
                 .state('login', {
                     url: '/login',
                     templateUrl: 'dist/templates/login.html',
