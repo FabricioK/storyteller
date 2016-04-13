@@ -50,8 +50,6 @@ app.get('/', function (request, response) {
 });
 
 
-
-require('./api/conta/user-routes.js')(app, server, passport);
 require('./api/conta/user-routes.js')(app, server, passport);
 require('./api/util-routes.js')(app, server, passport);
 
@@ -63,6 +61,7 @@ require('./api/quests/rewards-routes.js')(app, server, passport);
 
 require('./api/world/itens-routes.js')(app, server, passport);
 require('./api/world/npcs-routes.js')(app, server, passport);
+require('./api/world/mob-routes.js')(app, server, passport);
 
 function auth(req, res, next) {
     if (req.isAuthenticated()) { return next(); }
